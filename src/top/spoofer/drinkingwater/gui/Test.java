@@ -11,7 +11,7 @@ public class Test {
         EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                ReminderDialogNew d = new ReminderDialogNew();
+                ReminderDialog d = new ReminderDialog();
                 d.disposeWithTime(50000);
             }
         });
