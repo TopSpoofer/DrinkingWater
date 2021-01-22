@@ -24,7 +24,13 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
+
   </extensions>
+
+  <applicationListeners>
+    <listener class="top.spoofer.drinkingwater.DrinkingWaterComponent"
+              topic="com.intellij.ide.AppLifecycleListener"/>
+  </applicationListeners>
 
   <actions>
     <!-- Add your actions here -->
@@ -33,9 +39,10 @@
       <add-to-group group-id="ToolsMenu" anchor="last"/>
     </action>
   </actions>
-    <application-components>
-        <component>
-            <implementation-class>top.spoofer.drinkingwater.DrinkingWaterComponent</implementation-class>
-        </component>
-    </application-components>
+
+  <application-components>
+      <component>
+          <implementation-class>top.spoofer.drinkingwater.DrinkingWaterComponent</implementation-class>
+      </component>
+  </application-components>
 </idea-plugin>

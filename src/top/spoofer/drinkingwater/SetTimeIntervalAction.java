@@ -6,7 +6,6 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 
 public class SetTimeIntervalAction extends AnAction {
-
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
         // TODO: insert action logic here

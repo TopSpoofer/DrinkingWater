@@ -8,7 +8,6 @@ import java.util.TimerTask;
 public class DrinkingWaterTimerTask extends TimerTask {
     @Override
     public void run() {
-        JFrame.setDefaultLookAndFeelDecorated(false);
         ReminderDialog d = new ReminderDialog();
         d.disposeWithTime(5000);
     }
